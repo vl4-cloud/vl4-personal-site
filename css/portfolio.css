@@ -1,0 +1,15 @@
+.portfolio-grid {
+    display: grid;
+    gap: 30px;
+}
+
+.portfolio-card {
+    border: 1px solid var(--border-color);
+    padding: 40px;
+    transition: none;
+}
+
+.portfolio-card h2 {
+    margin-bottom: 10px;
+    font-weight: normal;
+}

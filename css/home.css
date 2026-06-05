@@ -1,0 +1,20 @@
+.home {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+}
+
+.home-content {
+    max-width: 700px;
+}
+
+.home-name {
+    font-size: 4rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.home-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
