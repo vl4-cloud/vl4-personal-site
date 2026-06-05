@@ -1,6 +1,8 @@
 .home {
     min-height: calc(100vh - 70px);
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 80px;
     align-items: center;
 }
 
@@ -9,7 +11,7 @@
 }
 
 .home-name {
-    font-size: 4rem;
+    font-size: clamp(4rem, 4vw, 5rem);
     font-weight: normal;
     margin-bottom: 20px;
 }
@@ -17,4 +19,23 @@
 .home-subtitle {
     font-size: 1.2rem;
     opacity: 0.9;
+}
+
+.home-image img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 900px) {
+
+    .home {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .home-name {
+        font-size: 4rem;
+    }
 }

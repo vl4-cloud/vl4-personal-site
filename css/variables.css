@@ -1,0 +1,15 @@
+:root {
+
+    /*--bg-color: #084b26;*/
+    --bg-color:rgb(255, 255, 255);
+
+    --text-color: #0f0f0fde;
+
+    /*--border-color: rgba(255,255,255,.15);*/
+    --border-color: rgba(0,0,0,0);
+
+    --font-main: 'Noto Sans SC';
+
+    --content-width: 1100px;
+
+}

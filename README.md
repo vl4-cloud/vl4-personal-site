@@ -4,6 +4,8 @@ portfolio website for the award-winning writer-filmmaker, ms ziwei lin :)
 
 ver2 structure:
 
+``` text
+
 ziwei-portfolio/
 ├── index.html
 │
@@ -30,3 +32,5 @@ ziwei-portfolio/
 │   └── documents/
 │
 └── README.md
+
+```
