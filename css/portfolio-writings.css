@@ -1,0 +1,61 @@
+.portfolio-writing-card,
+.portfolio-writing-card--reverse {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.portfolio-writing-card--reverse {
+    grid-template-columns: 1fr 2fr;
+}
+
+.portfolio-writing-card--reverse .portfolio-writing-image {
+    order: 2;
+}
+
+.portfolio-writing-card--reverse .portfolio-writing-info {
+    order: 1;
+}
+
+portfolio-writing-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.portfolio-writing-title {
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin-bottom: 6px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.portfolio-writing-meta {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin-bottom: 16px;
+    letter-spacing: 0.05em;
+}
+
+.portfolio-writing-desc {
+    font-size: 1rem;
+    line-height: 1.8;
+    opacity: 0.9;
+}
+
+@media (max-width: 900px) {
+
+    .portfolio-writing-card,
+    .portfolio-writing-card--reverse {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .portfolio-writing-card--reverse .portfolio-writing-video,
+    .portfolio-writing-card--reverse .portfolio-writing-info {
+        order: unset;
+    }
+
+}
