@@ -63,6 +63,42 @@ a {
     font-size: 0.95rem;
 }
 
+.nav-dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-dropdown-toggle {
+    font-size: 0.95rem;
+}
+
+.nav-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    padding: 12px 0;
+    min-width: 180px;
+    z-index: 1001;
+}
+
+.nav-dropdown-menu a {
+    display: block;
+    padding: 8px 20px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.nav-dropdown-menu a:hover {
+    opacity: 0.6;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu {
+    display: block;
+}
+
 .container {
     max-width: var(--content-width);
     margin: 0 auto;
