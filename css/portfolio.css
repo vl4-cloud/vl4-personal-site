@@ -28,6 +28,7 @@ body {
     z-index: 1000;
 }
 
+
 .portfolio-grid {
     display: grid;
     gap: 30px;

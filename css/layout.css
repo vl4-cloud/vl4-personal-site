@@ -78,7 +78,7 @@ a {
     left: 0;
     background: var(--bg-color);
     border: 1px solid var(--border-color);
-    padding: 12px 0;
+    padding: 10px 0;
     min-width: 180px;
     z-index: 1001;
 }
