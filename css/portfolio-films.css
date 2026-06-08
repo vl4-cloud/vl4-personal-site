@@ -5,6 +5,7 @@
     gap: 50px;
     align-items: center;
     margin-bottom: 100px;
+    scroll-margin-top: 100px;
 }
 
 .portfolio-film-card--reverse {
@@ -15,11 +16,21 @@
     order: 2;
 }
 
+.portfolio-film-card--reverse .portfolio-film-picture {
+    order: 2;
+}
+
 .portfolio-film-card--reverse .portfolio-film-info {
     order: 1;
 }
 
 .portfolio-film-video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.portfolio-film-picture {
     width: 100%;
     height: auto;
     display: block;
@@ -54,6 +65,7 @@
     }
 
     .portfolio-film-card--reverse .portfolio-film-video,
+    .portfolio-film-card--reverse .portfolio-film-picture,
     .portfolio-film-card--reverse .portfolio-film-info {
         order: unset;
     }
