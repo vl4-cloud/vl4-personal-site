@@ -1,0 +1,111 @@
+.portfolio-exhibition-card,
+.portfolio-exhibition-card--reverse {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 50px;
+    align-items: start;
+    margin-bottom: 100px;
+}
+
+.portfolio-exhibition-card {
+    scroll-margin-top: 120px;
+}
+
+.portfolio-exhibition-card--reverse {
+    grid-template-columns: 1fr 1.4fr;
+}
+
+/* reverse layout */
+.portfolio-exhibition-card--reverse .portfolio-exhibition-media {
+    order: 2;
+}
+
+.portfolio-exhibition-card--reverse .portfolio-exhibition-info {
+    order: 1;
+}
+
+/* media column */
+.portfolio-exhibition-media {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.portfolio-exhibition-media figure {
+    margin: 0;
+}
+
+.portfolio-exhibition-media img,
+.portfolio-exhibition-media video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.portfolio-exhibition-media video {
+    cursor: pointer;
+}
+
+/* title */
+.portfolio-exhibition-title {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: normal;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 1.3;
+}
+
+/* metadata */
+.portfolio-exhibition-meta {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin-bottom: 6px;
+    letter-spacing: 0.05em;
+}
+
+.portfolio-exhibition-link {
+    font-size: 1em;
+    margin-left: 6px;
+}
+
+.portfolio-exhibition-link a {
+    color: #09b5f4;
+    text-decoration: none;
+}
+
+.portfolio-exhibition-venue {
+    font-size: 0.85rem;
+    opacity: 0.5;
+    margin-bottom: 16px;
+    font-style: italic;
+}
+
+.portfolio-exhibition-desc {
+    font-size: 1rem;
+    line-height: 1.8;
+    opacity: 0.9;
+}
+
+.portfolio-exhibition-caption {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    margin-top: 8px;
+    letter-spacing: 0.02em;
+}
+
+/* mobile */
+@media (max-width: 900px) {
+
+    .portfolio-exhibition-card,
+    .portfolio-exhibition-card--reverse {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .portfolio-exhibition-card--reverse .portfolio-exhibition-media,
+    .portfolio-exhibition-card--reverse .portfolio-exhibition-info {
+        order: unset;
+    }
+}
